@@ -3,11 +3,14 @@
 - title: Home
   url: /
 
-- title: Getting Started
-  url: /getting-started/
+- title: Training
+  url: /training/
 
-- title: About
-  url: /about/
+- title: Inspection
+  url: /inspection/
 
-- title: Terms
-  url: /terms/
+- title: Installation
+  url: /installation/
+
+- title: Contact Us
+  url: /contact/
