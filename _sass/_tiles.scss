@@ -5,6 +5,8 @@
 .tile {
   @include outer-container;
   margin-bottom: $gutter;
+  padding: $gutter / 2;
+  background-color: #fff;
   @include media($micro) {
     @include fill-parent;
   }
