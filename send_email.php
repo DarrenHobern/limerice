@@ -1,8 +1,11 @@
 <?php
+
+define("EMAIL", "brian@vidtech.co.nz") //Change me
+
 if(isset($_POST['submit']) && !empty($_POST['submit'])):
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
         //your site secret key, 'keep it secret, keep it safe
-        $secret = 'KeyGoesHere';
+        $secret = 'KeyGoesHere'; //CHange me
         //get verify response data
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
         $responseData = json_decode($verifyResponse);
@@ -12,7 +15,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             $email = !empty($_POST['email'])?$_POST['email']:'';
             $message = !empty($_POST['message'])?$_POST['message']:'';
 
-            $to = 'EmailAddressGoesHere';
+
             $subject = 'New contact form have been submitted';
             $htmlContent = "
                 <h1>Contact request details</h1>
@@ -26,7 +29,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             // More headers
             $headers .= 'From:'.$name.' <'.$email.'>' . "\r\n";
             //send email
-            @mail($to,$subject,$htmlContent,$headers);
+            @mail(EMAIL,$subject,$htmlContent,$headers);
 
             $succMsg = 'Your contact request have submitted successfully.';
         else:
