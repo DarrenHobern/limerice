@@ -10,13 +10,18 @@ image:
   teaser:
 ---
 
-Training
 
-EWRB approved Refresher Training provider.
 
-Authorised to provide the licence requirements for electrical licence renewals.
 
-Personal or Group Standards up-skilling at your place of work to suit your needs.  
+{% include course-list.html category='courses' %}
+{% include course-upcoming.html %}
+{% include course-enrole.html %}
+
+
+
+{% comment %}
+Section to request other sessions
+{% endcomment %}
 
 **How does this work?**
 {: .notice-info}

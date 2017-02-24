@@ -1,0 +1,10 @@
+{% for option in site.data.courses %}
+<p>
+    <h4>{{ option.title }}</h4>
+    <ul>
+        <li>{{ option.date }}</li>
+        <li>{{ option.time }}</li>
+        <li>{{ option.description }}</li>
+    </ul>
+</p>
+{% endfor %}

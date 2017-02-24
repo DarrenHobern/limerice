@@ -1,0 +1,18 @@
+{% assign category = include.category %}
+
+{% for post in site.categories.[category] %}
+<div class="medium-4 columns">
+
+
+        <a class="more" href="{{ site.url }}{{ post.url }}">
+            <img src="{{ site.urlimg }}{{post.header.image_fullwidth}}" width="300" alt="{{ page.title escape_once }}">
+        </a>
+        <a href="{{ site.url }}{{ post.url }}">{% if post.subheadline %}{{ post.subheadline }} &middot; {% endif %}<h2 class="font-size-h3 t10">{{ post.title }}</h2></a>
+        <p>{{ post.teaser }}</p>
+        <p>
+            
+        </p>
+
+
+</div>
+{% endfor %}
