@@ -12,7 +12,8 @@
     {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.css">
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
 
     <meta name="HandheldFriendly" content="True">
