@@ -1,6 +1,6 @@
 <?php
 
-define("EMAIL", "brian@vidtech.co.nz") //Change me
+define("EMAIL", "brian@vidtech.co.nz")
 
 if(isset($_POST['submit']) && !empty($_POST['submit'])):
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
@@ -11,12 +11,14 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
         $responseData = json_decode($verifyResponse);
         if($responseData->success):
             //contact form submission code
+						$subject = !empty($_POST['enquiry'])?$_POST['enquiry']:'';
             $name = !empty($_POST['name'])?$_POST['name']:'';
             $email = !empty($_POST['email'])?$_POST['email']:'';
             $message = !empty($_POST['message'])?$_POST['message']:'';
 
 
-            $subject = 'New contact form have been submitted';
+            //$subject = 'New contact form have been submitted';
+						$subject = "New Contact Form: " . $subject;
             $htmlContent = "
                 <h1>Contact request details</h1>
                 <p><b>Name: </b>".$name."</p>
