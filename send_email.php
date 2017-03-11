@@ -1,6 +1,6 @@
 <?php
 
-define("EMAIL", "brian@vidtech.co.nz")
+define("EMAIL", "example@email.com")
 
 if(isset($_POST['submit']) && !empty($_POST['submit'])):
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
