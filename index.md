@@ -1,5 +1,8 @@
 ---
 layout: home
+title:		"Vidtech Services"
+subtitle:	"Vidtech Services Electrical Inspections"
+slogan:		"Specialists in Electrical Inspections Services"
 permalink: /
 image:
   feature: homepage-banner.png

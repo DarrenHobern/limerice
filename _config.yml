@@ -1,7 +1,7 @@
 # Site wide configuration
 
-title: "My Site"
-description: "It might get good"
+title: "Vidtech Services"
+description: "Vidtech Services Electrical Inspections"
 logo: 120x120.gif
 teaser: 400x250.gif
 locale: en_US
@@ -34,7 +34,7 @@ owner:
   google:
     plus: "+"
     ad-client: ""
-    ad-slot: 
+    ad-slot:
   disqus-shortname:
 
 
