@@ -11,9 +11,11 @@ image:
 ---
 
 
-
-
-{% include course-list.html category='courses' %}
+<div class="row">
+    <div class="large-12">
+        {% include course-list.html category='courses' %}
+    </div>
+</div>
 {% include course-upcoming.html %}
 {% include course-enrole.html %}
 
