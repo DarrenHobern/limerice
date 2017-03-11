@@ -1,10 +1,28 @@
+<div class="row">
+    <div class="medium-4">
+        <div class="container">
+        <fieldset>
+
+<form>
+<ul class="course">
 {% for option in site.data.courses %}
-<p>
-    <h4>{{ option.title }}</h4>
-    <ul>
-        <li>{{ option.date }}</li>
-        <li>{{ option.time }}</li>
-        <li>{{ option.description }}</li>
-    </ul>
-</p>
+        <li>
+            <div class="course_option">
+                <input type="radio" id="{{ option.shortname }}" name="selector">
+                <div class="course_details">
+
+                    <div class="course_time">{{ option.date }} - {{ option.time }}</div>
+                    <label for="{{ option.shortname }}">{{ option.title }}</label>
+                </div>
+                <div class="course_description">{{ option.description }}</div>
+                <div class="check"></div>
+            </div>
+        </li>
+
 {% endfor %}
+</ul>
+</form>
+</fieldset>
+</div>
+</div>
+</div>
