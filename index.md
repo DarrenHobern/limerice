@@ -1,7 +1,7 @@
 ---
 layout: home
-title:		"Vidtech Services"
-subtitle:	"Vidtech Services Electrical Inspections"
+title:		"limerice"
+subtitle:	"limerice"
 slogan:		"Specialists in Electrical Inspections Services"
 permalink: /
 image:
