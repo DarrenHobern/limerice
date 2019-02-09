@@ -20,9 +20,5 @@ image:
     <p class="post-excerpt">Our diverse range of courses will equip you will the skills to keep with a rapidly changing industry. </p>
   </div><!-- /.tile -->
 
-  <div class="tile">
-    <h2 class="post-title">Installation</h2>
-    <p class="post-excerpt">We can plug it in AND turn it on.</p>
-  </div><!-- /.tile -->
 
 </div><!-- /.tiles -->

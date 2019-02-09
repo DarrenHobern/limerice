@@ -10,13 +10,14 @@ image:
   teaser:
 ---
 
+**Enrolements for 2019 now open**
+{: .notice-info}
 
 <div class="row">
     <div class="large-12">
         {% include course-list.html category='courses' %}
     </div>
 </div>
-{% include course-upcoming.html %}
 {% include course-enrole.html %}
 
 
@@ -24,6 +25,3 @@ image:
 {% comment %}
 Section to request other sessions
 {% endcomment %}
-
-**How does this work?**
-{: .notice-info}
