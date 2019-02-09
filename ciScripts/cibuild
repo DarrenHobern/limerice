@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-set -e # halt script on error
+#set -e # halt script on error
 
+gem install bundler
+bundle install
 ls -la
 bundle exec jekyll build
 ls -la
