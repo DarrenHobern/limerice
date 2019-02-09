@@ -3,7 +3,7 @@ layout: archive
 title: "Inspections"
 date: 2014-05-30T11:40:45-04:00
 modified:
-excerpt: "An archive of media posts, perfect for portfolios and galleries."
+excerpt: "Vidtech services offers a wide range of inspection and certification options"
 tags: []
 image:
   feature:
@@ -12,6 +12,6 @@ image:
 
 <div class="tiles">
 {% for post in site.categories.inspection %}
-  {% include post-grid.html %}
+  {% include inspection-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->
