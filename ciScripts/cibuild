@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 #set -e # halt script on error
-
+cd /home/travis/build/DarrenHobern/limerice/
+ls -la
 gem install bundler
 bundle install
 ls -la
 bundle exec jekyll build
 ls -la
-cd _site
+cd /home/travis/build/DarrenHobern/limerice/_site
 bundle exec htmlproofer
