@@ -1,25 +1,27 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <fieldset>
-	<form>
+	<form action="/send_email.php" method="post">
 		<h2>Form Element</h2>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
 		<label for="text_field">First name:</label>
-		<input type="text" id="first_name" />
+		<input type="text" name="first_name" />
 		<label for="text_field">Last name:</label>
-		<input type="text" id="last_name" />
+		<input type="text" name="last_name" />
 		<label for="text_field">Street address:</label>
-		<input type="text" id="address" />
+		<input type="text" name="address" />
 		<label for="text_field">City:</label>
-		<input type="text" id="city" />
+		<input type="text" name="city" />
 		<label for="text_field">Post code:</label>
-		<input type="text" id="postcode" />
+		<input type="text" name="postcode" />
 		<label for="text_field">Phone:</label>
-		<input type="text" id="phone" />
+		<input type="text" name="phone" />
 		<label for="text_field">Email address:</label>
-		<input type="text" id="email" />
+		<input type="text" name="email" />
 		<label for="text_field">EW ID number:</label>
-		<input type="text" id="ew_id" />
+		<input type="text" name="ew_id" />
 		<label for="text_field">EW registration number:</label>
-		<input type="text" id="ew_reg" />
+		<input type="text" name="ew_reg" />
 		<p>
 			<label for="reg_type">Registration type:</label>
 			<select name="reg_type">
@@ -38,14 +40,16 @@
 			</select>
 		</p>
 		<p>
-			<label for="radio_buttons">Course:</label>
-			<label><input type="radio" class="radio" name="radio_button" value="ref_only" />Refresher only</label>
-			<label><input type="radio" class="radio" name="radio_button" value="ref_fa" />Refresher + First aid</label>
-			<label><input type="radio" class="radio" name="radio_button" value="fa_only" />First aid only</label>
+			<label for="course">Course:</label>
+			<label><input type="radio" class="radio" name="course" value="ref_only" />Refresher only</label>
+			<label><input type="radio" class="radio" name="course" value="ref_fa" />Refresher + First aid</label>
+			<label><input type="radio" class="radio" name="course" value="fa_only" />First aid only</label>
 		</p>
 
 		<p>
-			<input class="btn" type="submit" value="Submit" />
+			<div class="g-recaptcha" data-sitekey="6Lf0ExEUAAAAALrslmkYVs0WaucAGf6erteHzTRv"></div>
+
+			<input class="btn" type="submit" name="submit" value="Submit" />
 		</p>
 	</form>
 </fieldset>
