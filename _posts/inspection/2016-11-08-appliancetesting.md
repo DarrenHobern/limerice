@@ -10,5 +10,7 @@ image:
   feature:  branch-1600x800.jpg
   teaser:   branch-400x250.jpg
 ---
-Test & Tag
- - Test and tagging of appliances and electrical equipment
+Test & Tag for electrical Safety  
+ - Test and tagging of:- 
+ - Tools and leads
+ - Mobile tailer appliances

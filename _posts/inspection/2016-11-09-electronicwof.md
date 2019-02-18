@@ -10,12 +10,13 @@ image:
   feature:  branch-1600x800.jpg
   teaser:   branch-400x250.jpg
 ---
-Connectable installations requiring EWOF’s or Re-Inspections of the following types:-
+Electrical Warrant of Fitness (EWOF)  
+Connectable installations requiring EWOF’s or Re-Inspections including
  - Caravans
  - Camper Vans
  - Motorhomes 
  - Custom Built trailers/Campers
- - mobile classrooms 
+ - Mobile classrooms 
  - Food Trailers
  - Out buildings
- - Connectable installations
+ - Other Connectable Installations
