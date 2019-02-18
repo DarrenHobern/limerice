@@ -1,6 +1,6 @@
 ---
 layout: service
-title: "Appliance Testing & Tagging"
+title: "Testing & Tagging"
 categories: inspection
 modified: 2016-12-08T16:28:11-13:00
 comments: false
@@ -12,6 +12,6 @@ image:
 ---
 Test & Tag for Electrical Safety  
 
- - Test and tagging of:- 
  - Tools and leads
- - Mobile tailer appliances
+ - Mobile trailer appliances
+ - Electrical equipment

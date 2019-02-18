@@ -11,7 +11,7 @@ image:
   teaser:   branch-400x250.jpg
 ---
 
-Inspections and Re-Inspections  
+Inspections and Re-Inspections <br> Periodic Re-inspections
 
  Testing and certification of the following
  - Caravans
