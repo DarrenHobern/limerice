@@ -11,7 +11,7 @@ image:
   teaser:   branch-400x250.jpg
 ---
 Welcome to Vidtech Services Inspection Services  
-New and Existing installations including but not limited to:
+New and Existing installations
 
  - BTS -  Builders Temp Supplies
  - Permanent connections
