@@ -10,7 +10,6 @@ image:
   feature:  branch-1600x800.jpg
   teaser:   branch-400x250.jpg
 ---
-Welcome to Vidtech Services Inspection Services  
 New and Existing installations
 
  - BTS -  Builders Temp Supplies
