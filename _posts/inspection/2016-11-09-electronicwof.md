@@ -11,14 +11,14 @@ image:
   teaser:   branch-400x250.jpg
 ---
 
-Inspections and Re-Inspections <br> Periodic Re-inspections
+Inspections  <br>Periodic Re-inspections
 
- Testing and certification of the following
+ Testing and certification of the following:-
  - Caravans
  - Camper Vans
  - Motorhomes 
+ - Food trailers
  - Custom Built trailers/Campers
+ - Out buildings 
  - Mobile classrooms 
- - Food Trailers
- - Out buildings
  - Other Connectable Installations

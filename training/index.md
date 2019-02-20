@@ -10,7 +10,7 @@ image:
   teaser:
 ---
 
-**Enrolements for 2019 now open**
+**Enrolments for 2019 now open**
 {: .notice-info}
 
 <div class="row">

@@ -1,7 +1,7 @@
 ---
 layout: home
-title:		"limerice"
-subtitle:	"limerice"
+title:		"VIDTECH SERVICES"
+subtitle:	"VTS Electrical Inspections"
 slogan:		"Specialists in Electrical Inspections Services"
 permalink: /
 image:
@@ -17,7 +17,7 @@ image:
 
   <div class="tile">
     <h2 class="post-title">Training</h2>
-    <p class="post-excerpt">Our diverse range of courses will equip you will the skills to keep with a rapidly changing industry. </p>
+    <p class="post-excerpt">Our range of electrical related courses, will keep you up to date with a rapidly changing industry. </p>
   </div><!-- /.tile -->
 
 

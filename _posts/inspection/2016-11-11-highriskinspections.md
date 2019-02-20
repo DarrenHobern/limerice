@@ -1,6 +1,6 @@
 ---
 layout: service
-title: "Inspections"
+title: "Installation Inspections"
 categories: inspection
 modified: 2019-02-18T14:01:00-13:00
 comments: false
@@ -10,9 +10,9 @@ image:
   feature:  branch-1600x800.jpg
   teaser:   branch-400x250.jpg
 ---
-New and Existing installations
+New and Existing Installations
 
  - BTS -  Builders Temp Supplies
+ - New connections
  - Permanent connections
- - New Connections
- - Alterations and additions classed as  Hi-Risk Work
+ - Alterations and additions classed as Hi-risk work
