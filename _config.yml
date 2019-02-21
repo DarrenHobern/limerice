@@ -63,3 +63,4 @@ exclude:
   - package.json
   - spec
   - tmp
+  - ciScripts
