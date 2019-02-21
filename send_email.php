@@ -28,6 +28,8 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             $_POST['ew_reg'] = filter_var($_POST['ew_reg'], FILTER_SANITIZE_STRING);
             $_POST['reg_type'] = filter_var($_POST['reg_type'], FILTER_SANITIZE_NUMBER_INT);
             $_POST['course'] = filter_var($_POST['course'], FILTER_SANITIZE_STRING);
+            $_POST['ewrb_complete'] = filter_var($_POST['ewrb_complete'], FILTER_SANITIZE_STRING);
+
 
             $first_name = !empty($_POST['first_name'])?$_POST['first_name']:'';
             $last_name = !empty($_POST['last_name'])?$_POST['last_name']:'';
@@ -40,6 +42,8 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             $ew_reg = !empty($_POST['ew_reg'])?$_POST['ew_reg']:'';
             $reg_type = !empty($_POST['reg_type'])?$_POST['reg_type']:'';
             $course = !empty($_POST['course'])?$_POST['course']:'';
+            $ewrb_complete = !empty($_POST['ewrb_complete'])?$_POST['ewrb_complete']:'';
+
 
             //$subject = 'New contact form have been submitted';
 						$subject = "New enrolment from: " . $first_name;
@@ -56,6 +60,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
                 <p><b>ew_reg: </b>".$ew_reg."</p>
                 <p><b>reg_type: </b>".$reg_type."</p>
                 <p><b>course: </b>".$course."</p>
+                <p><b>e-learning status: </b>".$ewrb_complete".</p>
 
             ";
 
