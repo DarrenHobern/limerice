@@ -13,5 +13,5 @@ image:
 Test and Tag for Electrical Safety  
 
  - Electrical equipment
- - Mobile trailer appliances
+ - Mobile installation appliances
  - Tools and leads 
