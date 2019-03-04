@@ -10,7 +10,8 @@ image:
   teaser:
 ---
 
-**Enrolments for 2019 now open**
+**Enrolments for 2019 now open**  <br>
+**Have you completed your e-learning modules?**
 {: .notice-info}
 
 <div class="row">
