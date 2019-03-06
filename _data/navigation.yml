@@ -1,13 +1,13 @@
 # Site navigation links
 
-- title: Training
-  url: /training/
-  excerpt: "Offering quality cources"
-  image: 400x250.gif
-
 - title: Inspection
   url: /inspection/
   excerpt: ""
+  image: 400x250.gif
+
+- title: Training
+  url: /training/
+  excerpt: "Offering quality cources"
   image: 400x250.gif
 
 - title: Contact Us

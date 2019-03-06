@@ -2,7 +2,7 @@
 layout: service
 title: "Electrical Warrant of Fitness (EWOF)"
 categories: inspection
-modified: 2016-12-08T16:28:11-13:00
+modified: 2019-02-28T16:28:11-13:00
 comments: false
 ads: false
 share: false
@@ -15,7 +15,7 @@ Inspections  <br>Periodic Re-inspections
 
  Testing and certification of the following:-
  - Caravans
- - Camper Vans
+ - Campervans
  - Motorhomes 
  - Food trailers
  - Custom Built trailers/Campers
