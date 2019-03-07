@@ -2,16 +2,15 @@
 <p>With over 30 years experience in the electrical industry, Brian established Vidtech Services in 1996. A solely owned and operated business providing inspections and training courses for the electrical sector in the Waipa/Waikato/Matamata-Piako area.
 <br><br>
 Any queries you may have, can be made via email, mobile phone or use the contact form below.<br>
-Mobile: +64272909939<br>
-Email:  info@vidtech.co.nz</p>
+Mobile: 027-290-9939<br>
+Email:  <a href="mailto:info@vidtech.co.nz">info@vidtech.co.nz</a></p>
 <fieldset>
 	<form action="/send_email.php">
 		<h2>Contact Form</h2>
-
-		
 		<p>Please select the service required below and we will get back to you.</p>
 
 		<!--DROPDOWN enquiry type-->
+		<label for="enquiry">Service required:</label>
 		<select name='enquiry'>
 			<option value="Training">Training</option>
 			<option value="Inspection">Inspection</option>
@@ -19,10 +18,13 @@ Email:  info@vidtech.co.nz</p>
 		</select>
 
 		<!--TEXTBOX name-->
+		<label for="text_field">Name:</label>
     <input type="text" name="name" title="Name" placeholder="Name" required="true"/>
 		<!--TEXTBOX email-->
-		<input type="text" name="email" title="Last Name" placeholder="Email" required="true"/>
+		<label for="text_field">Email address:</label>
+		<input type="text" name="email" title="email" placeholder="Email" required="true"/>
 		<!--TEXTBOX message-->
+		<label for="text_field">How can we help?</label>
 		<textarea name="message" title="message" placeholder="How can we help?" required="true" ></textarea>
 
 
