@@ -2,7 +2,7 @@
 layout: archive
 title: "Inspections"
 date: 2014-05-30T11:40:45-04:00
-modified:
+modified: 2019-02-28T11:40:45-04:00
 excerpt: "Our full range of inspection services will help ensure your safety and compliance."
 tags: []
 image:
