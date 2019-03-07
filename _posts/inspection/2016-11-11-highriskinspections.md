@@ -1,8 +1,8 @@
 ---
 layout: service
-title: "High Risk Inspection"
+title: "Installation Inspections"
 categories: inspection
-modified: 2016-12-11T16:28:11-13:00
+modified: 2019-02-18T14:01:00-13:00
 comments: false
 ads: false
 share: false
@@ -10,4 +10,9 @@ image:
   feature:  branch-1600x800.jpg
   teaser:   branch-400x250.jpg
 ---
-High Risk inspection
+New and Existing Installations
+
+ - BTS -  Builders Temp Supplies
+ - New connections
+ - Permanent connections
+ - Alterations and additions classed as Hi-risk work
