@@ -19,10 +19,10 @@ Welcome to Vidtech Services, a locally owned and operated business providing ele
   </div><!-- /.tile -->
 
   <div class="tile">
-    <a href="/training">
+    <a href="/courses">
       <h2 class="post-title">Training</h2>
       <p class="post-excerpt">We offer a selection of electrical courses, that will keep you up to date within a rapidly changing sector. </p>
     </a>
   </div><!-- /.tile -->
-  
+
 </div><!-- /.tiles -->
