@@ -1,5 +1,4 @@
 <?php
-
 //Email to send enrolment too
 define("EMAIL", "enrolmentoffice@localhost");
 //SMTP authenticated address to send emails from
@@ -8,13 +7,13 @@ define("FROM", "webadmin@localhost")
 $auto_reply = FALSE;
 
 if(isset($_POST['submit']) && !empty($_POST['submit'])):
-  //  if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
+    if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
         //your site secret key, 'keep it secret, keep it safe
         $secret = 'KeyGoesHere'; //Change me
         //get verify response data
-  //      $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-  //      $responseData = json_decode($verifyResponse);
-  //      if($responseData->success):
+        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+        $responseData = json_decode($verifyResponse);
+        if($responseData->success):
 
             //contact form submission code
             $_POST['first_name'] = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING);
@@ -73,12 +72,12 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             @mail(EMAIL,$subject,$htmlContent,$headers);
 
             $succMsg = 'Your contact request have submitted successfully.';
-  //      else:
-  //          $errMsg = 'Robot verification failed, please try again.';
-  //      endif;
-  //  else:
-  //      $errMsg = 'Please click on the reCAPTCHA box.';
-  //  endif;
+        else:
+            $errMsg = 'Robot verification failed, please try again.';
+        endif;
+    else:
+        $errMsg = 'Please click on the reCAPTCHA box.';
+    endif;
 else:
     $errMsg = '';
     $succMsg = '';
