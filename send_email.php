@@ -2,7 +2,7 @@
 //Email to send enrolment too
 define("EMAIL", "enrolmentoffice@localhost");
 //SMTP authenticated address to send emails from
-define("FROM", "webadmin@localhost")
+define("FROM", "webadmin@localhost");
 
 $auto_reply = FALSE;
 
@@ -47,7 +47,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             //$subject = 'New contact form have been submitted';
 						$subject = "New enrolment from: " . $first_name;
             $htmlContent = "
-                <h1>Enrolment details details</h1>
+                <h1>Enrolment details</h1>
                 <p><b>first_name: </b>".$first_name."</p>
                 <p><b>last_name: </b>".$last_name."</p>
                 <p><b>address: </b>".$address."</p>
@@ -59,7 +59,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
                 <p><b>ew_reg: </b>".$ew_reg."</p>
                 <p><b>reg_type: </b>".$reg_type."</p>
                 <p><b>course: </b>".$course."</p>
-                <p><b>e-learning status: </b>".$ewrb_complete".</p>
+                <p><b>e-learning status: </b>".$ewrb_complete."</p>
 
             ";
 

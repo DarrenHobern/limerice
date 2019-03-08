@@ -284,6 +284,11 @@ select {
 	@include font-size($form-font-size,no);
 }
 
+.error {
+	font-weight: lighter;
+	color: orange;
+}
+
 label {
 	font-weight: bold;
 	font-family: $alt-font;
@@ -408,6 +413,7 @@ input[type="submit"] {
 	vertical-align: middle;
 	white-space: nowrap;
 }
+
 
 /*
    Navigation lists
