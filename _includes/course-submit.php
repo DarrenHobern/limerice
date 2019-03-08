@@ -132,33 +132,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               }
 
               $ewrb_complete = !empty($_POST['ewrb_complete'])?$_POST['ewrb_complete']:'';
+              
+              if($first_nameErr == null && $last_nameErr == null && $addressErr == null && $cityErr == null && $postcodeErr == null && $phoneErr == null && $emailErr == null && $ew_idErr == null && $ew_regErr == null && $reg_typeErr == null && $courseErr == null):
+    						
+                $subject = "New enrolment from: " . $first_name;
+                $htmlContent = "
+                    <h1>Enrolment details</h1>
+                    <p><b>first_name: </b>".$first_name."</p>
+                    <p><b>last_name: </b>".$last_name."</p>
+                    <p><b>address: </b>".$address."</p>
+                    <p><b>city: </b>".$city."</p>
+                    <p><b>postcode: </b>".$postcode."</p>
+                    <p><b>phone: </b>".$phone."</p>
+                    <p><b>email: </b>".$email."</p>
+                    <p><b>ew_id: </b>".$ew_id."</p>
+                    <p><b>ew_reg: </b>".$ew_reg."</p>
+                    <p><b>reg_type: </b>".$reg_type."</p>
+                    <p><b>course: </b>".$course."</p>
+                    <p><b>e-learning status: </b>".$ewrb_complete."</p>
+                ";
 
-  						$subject = "New enrolment from: " . $first_name;
-              $htmlContent = "
-                  <h1>Enrolment details</h1>
-                  <p><b>first_name: </b>".$first_name."</p>
-                  <p><b>last_name: </b>".$last_name."</p>
-                  <p><b>address: </b>".$address."</p>
-                  <p><b>city: </b>".$city."</p>
-                  <p><b>postcode: </b>".$postcode."</p>
-                  <p><b>phone: </b>".$phone."</p>
-                  <p><b>email: </b>".$email."</p>
-                  <p><b>ew_id: </b>".$ew_id."</p>
-                  <p><b>ew_reg: </b>".$ew_reg."</p>
-                  <p><b>reg_type: </b>".$reg_type."</p>
-                  <p><b>course: </b>".$course."</p>
-                  <p><b>e-learning status: </b>".$ewrb_complete."</p>
-              ";
+                // Always set content-type when sending HTML email
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+                // More headers
+                $headers .= "From: Vidtech Services <". FROM .">\r\n";
+                //send email
+                @mail(EMAIL,$subject,$htmlContent,$headers);
+                
 
-              // Always set content-type when sending HTML email
-              $headers = "MIME-Version: 1.0" . "\r\n";
-              $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-              // More headers
-              $headers .= "From: Vidtech Services <". FROM .">\r\n";
-              //send email
-              @mail(EMAIL,$subject,$htmlContent,$headers);
-
-              $succMsg = 'Your contact request have submitted successfully.';
+                $succMsg = 'Your contact request have submitted successfully.';
+              else:
+                $errMsg = 'Please complete missing fields above';
+              endif;
           else:
               $errMsg = 'Robot verification failed, please try again.';
           endif;
@@ -171,6 +177,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   endif;
 }
 
+if($succMsg != null):
+    header("Location: /contact/success/");
+endif;
+
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -178,12 +188,4 @@ function test_input($data) {
   return $data;
 }
 
-/*
-if($succMsg != null):
-    header("Location: /training/success/");
-endif;
-if($errMsg != null):
-    header("Location: /training/retry/");
-endif;
-*/
 ?>
