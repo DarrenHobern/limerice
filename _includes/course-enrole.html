@@ -6,7 +6,7 @@
 		<h2>Registration Form </h2>
 		<a name="enrol"></a>
 		<p>Electrical re-registration training.  <br>Please complete all fields in full.</p>
-
+		<label><span class="error"><?php echo $errMsg; ?></span></label>
 	  <label for="text_field">First name:  <span class="error"><?php echo $first_nameErr;?></span></label>
 	  <input type="text" name="first_name" value="<?php echo $first_name;?>" />
 
@@ -62,15 +62,14 @@
 			<label><input type="radio" class="radio" name="course"
 				<?php
 					$course = !empty($course)?$course:'';
-					if(isset($course) && $course=="ref_only") echo "checked";
-				?>
-				value="ref_only" />Refresher only</label>
+					if(isset($course) && $course=="Ref_only") echo "checked";?>
+				value="Ref_only" />Refresher only</label>
 			<label><input type="radio" class="radio" name="course"
-				<?php if(isset($course) && $course=="ref_fa") echo "checked";?>
-				value="ref_fa" />Refresher + First aid</label>
+				<?php if(isset($course) && $course=="Ref+Fa") echo "checked";?>
+				value="Ref+Fa" />Refresher + First aid</label>
 			<label><input type="radio" class="radio" name="course"
-				<?php if(isset($course) && $course=="fa_only") echo "checked";?>
-				value="fa_only" />First aid only</label>
+				<?php if(isset($course) && $course=="Fa_only") echo "checked";?>
+				value="Fa_only" />First aid only</label>
 		</p>
 			<label><input type="checkbox" name="ewrb_complete"
 				<?php if(isset($ewrb_complete) && $ewrb_complete=="elearning_completed") echo "checked";?>

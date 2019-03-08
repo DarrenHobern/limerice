@@ -163,7 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 $succMsg = 'Your contact request have submitted successfully.';
               else:
-                $errMsg = 'Please complete missing fields above';
+                $errMsg = 'Please fill in all the fields';
               endif;
           else:
               $errMsg = 'Robot verification failed, please try again.';
