@@ -8,31 +8,31 @@
 		<p>Electrical re-registration training.  <br>Please complete all fields in full.</p>
 		<label><span class="error"><?php echo $errMsg; ?></span></label>
 	  <label for="text_field">First name:  <span class="error"><?php echo $first_nameErr;?></span></label>
-	  <input type="text" name="first_name" value="<?php echo $first_name;?>" />
+	  <input type="text" name="first_name" value="<?php echo $first_name;?>" required="true"/>
 
 		<label for="text_field">Last name:  <span class="error"><?php echo $last_nameErr;?></span></label>
-		<input type="text" name="last_name" value="<?php echo $last_name;?>" />
+		<input type="text" name="last_name" value="<?php echo $last_name;?>" required="true"/>
 
 		<label for="text_field">Postal address:  <span class="error"><?php echo $addressErr;?></span></label>
-		<input type="text" name="address" value="<?php echo $address;?>" />
+		<input type="text" name="address" value="<?php echo $address;?>" required="true"/>
 
 		<label for="text_field">City:  <span class="error"><?php echo $cityErr;?></span></label>
-		<input type="text" name="city" value="<?php echo $city;?>" />
+		<input type="text" name="city" value="<?php echo $city;?>" required="true"/>
 
 		<label for="text_field">Post code:  <span class="error"><?php echo $postcodeErr;?></span></label>
-		<input type="text" name="postcode" value="<?php echo $postcode;?>" />
+		<input type="text" name="postcode" value="<?php echo $postcode;?>" required="true"/>
 
 		<label for="text_field">Phone:  <span class="error"><?php echo $phoneErr;?></span></label>
-		<input type="text" name="phone" value="<?php echo $phone;?>" />
+		<input type="text" name="phone" value="<?php echo $phone;?>" required="true"/>
 
 		<label for="text_field">Email address:  <span class="error"><?php echo $emailErr;?></span></label>
-		<input type="text" name="email" value="<?php echo $email;?>" />
+		<input type="text" name="email" value="<?php echo $email;?>" required="true"/>
 
 		<label for="text_field">EW ID number:  <span class="error"><?php echo $ew_idErr;?></span></label>
-		<input type="text" name="ew_id" value="<?php echo $ew_id;?>" />
+		<input type="text" name="ew_id" value="<?php echo $ew_id;?>" required="true"/>
 
 		<label for="text_field">EW registration number:  <span class="error"><?php echo $ew_regErr;?></span></label>
-		<input type="text" name="ew_reg" value="<?php echo $ew_reg;?>" />
+		<input type="text" name="ew_reg" value="<?php echo $ew_reg;?>" required="true"/>
 		<p>
 			<label for="reg_type">Registration type:</label>
 			<select name="reg_type">
