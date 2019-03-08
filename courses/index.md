@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: enrol
 title: "Training"
 date: 2014-05-30T11:39:03-04:00
 modified: 2019-02-28T11:39:03-04:00
@@ -8,6 +8,7 @@ tags: []
 image:
   feature:
   teaser:
+permalink: /courses/index.php
 ---
 
 **Enrolments for 2019 now open**  <br>
@@ -19,7 +20,7 @@ Vidtech Services provides training options that vary from courses on set dates, 
         {% include course-list.html category='courses' %}
     </div>
 </div>
-{% include course-enrole.html %}
+
 
 
 

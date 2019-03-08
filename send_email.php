@@ -1,20 +1,19 @@
 <?php
-
 //Email to send enrolment too
 define("EMAIL", "enrolmentoffice@localhost");
 //SMTP authenticated address to send emails from
-define("FROM", "webadmin@localhost")
+define("FROM", "webadmin@localhost");
 
 $auto_reply = FALSE;
 
 if(isset($_POST['submit']) && !empty($_POST['submit'])):
-  //  if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
+    if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
         //your site secret key, 'keep it secret, keep it safe
         $secret = 'KeyGoesHere'; //Change me
         //get verify response data
-  //      $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-  //      $responseData = json_decode($verifyResponse);
-  //      if($responseData->success):
+        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+        $responseData = json_decode($verifyResponse);
+        if($responseData->success):
 
             //contact form submission code
             $_POST['first_name'] = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING);
@@ -28,6 +27,8 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             $_POST['ew_reg'] = filter_var($_POST['ew_reg'], FILTER_SANITIZE_STRING);
             $_POST['reg_type'] = filter_var($_POST['reg_type'], FILTER_SANITIZE_NUMBER_INT);
             $_POST['course'] = filter_var($_POST['course'], FILTER_SANITIZE_STRING);
+            $_POST['ewrb_complete'] = filter_var($_POST['ewrb_complete'], FILTER_SANITIZE_STRING);
+
 
             $first_name = !empty($_POST['first_name'])?$_POST['first_name']:'';
             $last_name = !empty($_POST['last_name'])?$_POST['last_name']:'';
@@ -40,11 +41,13 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             $ew_reg = !empty($_POST['ew_reg'])?$_POST['ew_reg']:'';
             $reg_type = !empty($_POST['reg_type'])?$_POST['reg_type']:'';
             $course = !empty($_POST['course'])?$_POST['course']:'';
+            $ewrb_complete = !empty($_POST['ewrb_complete'])?$_POST['ewrb_complete']:'';
+
 
             //$subject = 'New contact form have been submitted';
 						$subject = "New enrolment from: " . $first_name;
             $htmlContent = "
-                <h1>Enrolment details details</h1>
+                <h1>Enrolment details</h1>
                 <p><b>first_name: </b>".$first_name."</p>
                 <p><b>last_name: </b>".$last_name."</p>
                 <p><b>address: </b>".$address."</p>
@@ -56,6 +59,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
                 <p><b>ew_reg: </b>".$ew_reg."</p>
                 <p><b>reg_type: </b>".$reg_type."</p>
                 <p><b>course: </b>".$course."</p>
+                <p><b>e-learning status: </b>".$ewrb_complete."</p>
 
             ";
 
@@ -68,12 +72,12 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             @mail(EMAIL,$subject,$htmlContent,$headers);
 
             $succMsg = 'Your contact request have submitted successfully.';
-  //      else:
-  //          $errMsg = 'Robot verification failed, please try again.';
-  //      endif;
-  //  else:
-  //      $errMsg = 'Please click on the reCAPTCHA box.';
-  //  endif;
+        else:
+            $errMsg = 'Robot verification failed, please try again.';
+        endif;
+    else:
+        $errMsg = 'Please click on the reCAPTCHA box.';
+    endif;
 else:
     $errMsg = '';
     $succMsg = '';
