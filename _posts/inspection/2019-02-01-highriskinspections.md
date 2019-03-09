@@ -7,8 +7,8 @@ comments: false
 ads: false
 share: false
 image:
-  feature:  branch-1600x800.jpg
-  teaser:   branch-400x250.jpg
+  feature:  install-1600x800.jpg
+  teaser:   install-400x250.jpg
 ---
 New and Existing Installations
 

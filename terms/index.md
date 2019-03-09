@@ -78,3 +78,4 @@ This website is built using the open source software credited below:
 It features images by:
  - [Darren Hobern](https://github.com/darrenhobern)  
  - Jeanette Hobern
+ - [Bright Light Electrical](http://brightlightelectrical.co.nz/) c/o [Solar Electric Technology](https://www.esolar.co.nz/)  
