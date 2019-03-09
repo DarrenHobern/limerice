@@ -2,7 +2,7 @@
 layout: home
 title:		"VIDTECH SERVICES"
 subtitle:	"Vidtech Services Electrical Inspections"
-slogan:		"Specialists in electrical inspections services"
+slogan:		"Specialists in electrical inspection services"
 permalink: /
 image:
   feature: front-1600x800.jpg
