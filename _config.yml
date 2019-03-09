@@ -1,7 +1,7 @@
 # Site wide configuration
 
-title: "limerice"
-description: "limerice"
+title: "Vidtech Services"
+description: "Serving the electrical industry"
 logo: 120x120.gif
 teaser: 400x250.gif
 locale: en_US
@@ -63,3 +63,4 @@ exclude:
   - package.json
   - spec
   - tmp
+  - ciScripts

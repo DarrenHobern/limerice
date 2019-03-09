@@ -3,11 +3,14 @@
 - title: Home
   url: /
 
-- title: Training
-  url: /training/
-
 - title: Inspection
   url: /inspection/
 
+- title: Training
+  url: /courses/
+
 - title: Contact Us
   url: /contact/
+
+- title: Credits
+  url: /terms/

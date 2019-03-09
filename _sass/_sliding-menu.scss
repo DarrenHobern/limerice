@@ -21,11 +21,14 @@
    ========================================================================== */
 
 .sliding-menu-button {
-  position: fixed;
+  position: relative;
   transform: translateZ(0);
   backface-visibility: hidden; /* fix scroll jank */
-  top: $gutter;
-  right: $gutter;
+  //top: $gutter;
+  //right: $gutter;
+  top: -5.3em;
+  right: 1.6em;
+  float: right;
   display: block;
   width: $button-size * 2;
   height: $button-size * 2;
@@ -36,6 +39,9 @@
   cursor: pointer;
   z-index: 20;
   box-sizing: border-box;
+  @include media($medium, $large) {
+    display: none;
+  }
   &:hover {
     background: $black;
   }

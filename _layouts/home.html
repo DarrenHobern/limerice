@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ site.title }}</title>
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     {% if page.author %}
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
     {% include open-graph.html %}
-    {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link rel="stylesheet" href="/css/normalize.css">
@@ -33,10 +32,8 @@
   <body>
     {% include header.html %}
     {% include navigation-sliding.html %}
-
     {% if page.image.feature %}
-    <!-- <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})"> -->
-    <div class="page-lead" style="background-image:url(http://lorempixel.com/1600/800/business)">
+    <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})"> 
       <div class="wrap page-lead-content">
         <h1>{{page.subtitle}}</h1>
         <h2>{{page.slogan}}</h2>
