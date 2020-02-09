@@ -2,15 +2,15 @@
 
 - title: Inspection
   url: /inspection/
-  excerpt: ""
-  image: 400x250.gif
+  excerpt: "Quality inspections"
+  image: install-400x250.jpg
 
 - title: Training
   url: /courses/
-  excerpt: "Offering quality cources"
-  image: 400x250.gif
+  excerpt: "Tailored courses"
+  image: upskill-400x250.jpg
 
 - title: Contact Us
   url: /contact/
-  excerpt: ""
-  image: 400x250.gif
+  excerpt: "We are here to help"
+  image: contact-400x250.jpg

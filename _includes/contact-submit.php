@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
               if(!empty($_POST['message'])){
                 $message = test_input($_POST["message"]);
-                if (!preg_match("/^[a-zA-Z0-9 ]*$/",$message)) {
+                if (!preg_match("/^[a-zA-Z0-9 .?&':,-]*$/",$message)) {
                   $messageErr = "Only letters, numbers and white space allowed";
                 }
               } else {

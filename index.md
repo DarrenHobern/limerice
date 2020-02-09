@@ -2,10 +2,10 @@
 layout: home
 title:		"VIDTECH SERVICES"
 subtitle:	"Vidtech Services Electrical Inspections"
-slogan:		"Specialists in electrical inspections services"
+slogan:		"Specialists in electrical inspection services"
 permalink: /
 image:
-  feature: homepage-banner.png
+  feature: front-1600x800.jpg
 ---
 Welcome to Vidtech Services, a locally owned and operated business providing electrical inspections, training and refresher courses.
 

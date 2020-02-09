@@ -365,37 +365,15 @@ select {
  -webkit-appearance: none;
  -moz-appearance: none;
 
-  background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    radial-gradient(#ddd 70%, transparent 72%);
-  background-position:
-    calc(130% - 18px) calc(0.7em),
-    calc(130% - 13px) calc(0.7em),
-    calc(130%) 1px;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1.5em 1.5em;
-  background-repeat: no-repeat;
+background: url(/images/arrow.svg) white;
+background-size: 1.5em;
+background-position: right;
+background-position-x: 95%;
+background-repeat: no-repeat;
 }
 
 select:focus {
-  background-image:
-    linear-gradient(45deg, white 50%, transparent 50%),
-    linear-gradient(135deg, transparent 50%, white 50%),
-    radial-gradient(gray 70%, transparent 72%);
-  background-position:
-    calc(130% - 13px) 0.7em,
-    calc(130% - 18px) 0.7em,
-    calc(130%) 1px;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1.5em 1.5em;
-  background-repeat: no-repeat;
-  border-color: green;
-  outline: 0;
+
 }
 
 

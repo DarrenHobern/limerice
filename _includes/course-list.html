@@ -4,7 +4,8 @@
 {% for post in site.categories.[category] %}
 <div class="tile">
         <a href="{{ site.url }}{{ post.url }}">
-            <img src="http://lorempixel.com/300/200/transport" width="300" alt="{{ page.title escape_once }}">
+          {% if post.image.teaser %}<img src="{{ site.url }}/images/{{ post.image.teaser }}" alt="teaser" itemprop="image">
+            {% else %}<img src="{{ site.url }}/images/{{ site.teaser }}" alt="teaser" itemprop="image">{% endif %}
         </a>
         <a href="{{ site.url }}{{ post.url }}"><h2 class="font-size-h3 t10 post-title">{{ post.title }}</h2></a>
 </div>
