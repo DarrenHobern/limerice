@@ -23,6 +23,6 @@ layout: default
         {% comment %} Enrolment form {% endcomment %}
 				{% include course-enrole.html %}
 			</div><!-- /.page-content -->
-		</div class="archive-wrap"><!-- /.archive-wrap -->
+		</div><!-- /.archive-wrap -->
 	</div><!-- /.wrap -->
 </div><!-- /#main -->
