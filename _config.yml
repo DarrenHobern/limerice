@@ -5,7 +5,7 @@ description: "Serving the electrical industry"
 logo: 120x120.gif
 teaser: 400x250.gif
 locale: en_US
-url: ""
+url: "https://vidtech.co.nz"
 feed:
   path: atom.xml
 
