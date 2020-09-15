@@ -9,7 +9,7 @@ image:
   feature:
   teaser:
 ---
-This includes inspection of builders temporary supplies, permanent supplies, new mains and earthing systems.  
+This includes inspection of new installations, permanent supplies, new or upgraded switchboards, new mains and earthing systems.  
 We also provide electrical WOF’s on many types of vehicles including, but not limited to, motorhomes, campervans and caravans.
 
 Vidtech Services is able to offer you a personalised service, tailored to meet your needs.

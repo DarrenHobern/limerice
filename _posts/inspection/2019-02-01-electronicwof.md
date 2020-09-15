@@ -13,12 +13,9 @@ image:
 
 Inspections  <br>Periodic Re-inspections
 
- Testing and certification of the following:-
- - Caravans
- - Campervans
- - Motorhomes
+  Testing and certification of the following:-
+ - Caravans, Campervans and Motorhomes
  - Food trailers
- - Custom Built trailers/Campers
  - Out buildings
  - Mobile classrooms
- - Other Connectable Installations
+ 
