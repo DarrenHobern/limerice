@@ -11,11 +11,11 @@ image:
 permalink: /courses/index.php
 ---
 
-**Enrolments for 2020 now open **  <br>
+**Enrolments are now open.   Please complete the enrolment form **  <br>
 **Have you completed your e-learning modules?**
 {: .notice-info}
 Vidtech Services provides training options that vary from courses on set dates, times and locations to tailored options taught on your own premises.
-As training is now goverened by the licence expiry date, course are dependent on numbers.
+As training is now goverened by the licence expiry date, courses are dependent on numbers.
 <div class="row">
     <div class="large-12">
         {% include course-list.html category='courses' %}
