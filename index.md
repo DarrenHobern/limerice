@@ -15,8 +15,8 @@ We provide electrical inspections of High Risk work on new and existing installa
   <div class="tile">
     <a href="/inspection">
       <h2 class="post-title">Inspection</h2>
-      <p class="post-excerpt">Our range of inspection services will help ensure your safety and compliance across the electrical industry in the High Risk Area.
-       We specalise in the inspection of the following types of installations: caravans, campervans motorhomes and other connectable installations. 
+      <p class="post-excerpt">Our range of inspection services will help ensure your safety and compliance across the electrical industry in the High Risk area.
+       We specalise in the inspection of the following types of installations.  Caravans, Campervans Motorhomes and other connectable installations. 
     </p>
     </a>
   </div><!-- /.tile -->

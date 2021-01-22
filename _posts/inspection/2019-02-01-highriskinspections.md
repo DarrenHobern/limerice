@@ -12,7 +12,8 @@ image:
 ---
 New and Existing Installations
 
+ - BTS -  Builders Temp Supplies
  - New connections
  - Permanent connections
  - Photovolatic installations 
- - All alterations and additions classed as Hi-risk work.
+ - Alterations and additions classed as Hi-risk work.
