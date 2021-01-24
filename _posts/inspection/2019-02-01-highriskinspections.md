@@ -16,4 +16,6 @@ New and Existing Installations
  - New connections
  - Permanent connections
  - Photovolatic installations 
- - Alterations and additions classed as Hi-risk work.
+ - Mains Work
+ - New Switchboards, upgrades and replacements 
+ - Alterations and additions classed as Hi-risk work

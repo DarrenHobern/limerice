@@ -16,13 +16,6 @@ permalink: /contact/index.php
 Welcome to Vidtech Services Electrical Inspections, a professional, frendly, locally owned and operated business, located in the Waikato/Waipa area.
 With over 30 years experience in the electrical industry, Vidtech Services was established in 1996.
 We provide electrical inspections of all installations, including the inspection and issuing of An Electrical Warrant of Fitness (EWOF) 
-As any connectable installation is required to be re-certified every four years, the re-inspections are carried out to meet the requirements of the Electricity Act, Regulations and the relevant Safety standards that are applicable.
-<BR>
-EWOF's for the following types can be carried out: 
-All connectable installations which includes Caravans, Campervans, Motorhomes and any other mobile items. E.G. mobile coffee trailers, food trailers and anything that is connected to a power supply.
-If required we can carry out any repairs necessary to enable the issuing of the Electrical Warrant of Fitness.
-<br>
-We also offer training and EWRB approved electrical safety refresher courses.
 <br>
 <br>
 Any queries you may have, can be made via email, mobile phone or use the contact form below to book a time for your inspection.  
