@@ -6,21 +6,14 @@ define("FROM", "webadmin@localhost");
 
 $auto_reply = FALSE;
 
-$first_nameErr = $last_nameErr = $addressErr = $cityErr = $postcodeErr = $phoneErr = $emailErr = $ew_idErr = $ew_regErr = $reg_typeErr = $courseErr = $ewrb_completeErr = "";
-$first_name = $last_name = $address = $city = $postcode = $phone = $email = $ew_id = $ew_reg = $reg_type = $course = $ewrb_complete = "";
+$first_nameErr = $last_nameErr = $addressErr = $cityErr = $postcodeErr = $phoneErr = $emailErr = $ew_idErr = $ew_regErr = $reg_typeErr = $pl_expErr = $courseErr = $ewrb_completeErr = "";
+$first_name = $last_name = $address = $city = $postcode = $phone = $email = $ew_id = $ew_reg = $reg_type = $pl_exp = $course = $ewrb_complete = "";
 $errMsg = $succMsg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if(isset($_POST['submit']) && !empty($_POST['submit'])):
-      if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
-          //your site secret key, 'keep it secret, keep it safe
-          $secret = 'KeyGoesHere'; //Change me
-          //get verify response data
-          $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-          $responseData = json_decode($verifyResponse);
-          if($responseData->success):
 
-              //Pre sanitize all inputs
+                  //Pre sanitize all inputs
               $_POST['first_name'] = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING);
               $_POST['last_name'] = filter_var($_POST['last_name'], FILTER_SANITIZE_STRING);
               $_POST['address'] = filter_var($_POST['address'],  FILTER_SANITIZE_STRING);
@@ -33,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $_POST['reg_type'] = filter_var($_POST['reg_type'], FILTER_SANITIZE_STRING);
               $_POST['course'] = !empty($_POST['course'])?filter_var($_POST['course'], FILTER_SANITIZE_STRING):'';
               $_POST['ewrb_complete'] = !empty($_POST['ewrb_complete'])?filter_var($_POST['ewrb_complete'], FILTER_SANITIZE_STRING):'';
+              $_POST['pl_exp'] = filter_var($_POST['pl_exp'], FILTER_SANITIZE_SPECIAL_CHARS);
 
               //Save completed fields and test against regex. Load error message if not.
               if(!empty($_POST['first_name'])){
@@ -108,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
               } else {
                 $ew_id = '';
-                $ew_idErr = 'Please enter your EW ID number from the <a href="https://ewrb.ewr.govt.nz/publicregister/search.aspx" rel="noopener noreferrer" target="_blank">electrical workers register</a> ';
+                $ew_idErr = 'Please enter your EW ID number from the <a style="text-decoration: underline;" href="https://ewrb.ewr.govt.nz/publicregister/search.aspx" rel="noopener noreferrer" target="_blank">electrical workers register</a> ';
               }
 
               if(!empty($_POST['ew_reg'])){
@@ -118,10 +112,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
               } else {
                 $ew_reg = '';
-                $ew_regErr = 'Please enter your registration number from the <a  href="https://ewrb.ewr.govt.nz/publicregister/search.aspx" rel="noopener noreferrer" target="_blank">electrical workers register</a> ';
+                $ew_regErr = 'Please enter your registration number from the <a style="text-decoration: underline;" href="https://ewrb.ewr.govt.nz/publicregister/search.aspx" rel="noopener noreferrer" target="_blank">electrical workers register</a> ';
               }
 
               $reg_type = !empty($_POST['reg_type'])?$_POST['reg_type']:'';
+
+              $pl_exp = !empty($_POST['pl_exp'])?$_POST['pl_exp']:'';
 
               $course = !empty($_POST['course'])?$_POST['course']:'';
               if(!empty($_POST['course'])){
@@ -132,9 +128,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               }
 
               $ewrb_complete = !empty($_POST['ewrb_complete'])?$_POST['ewrb_complete']:'';
-              
+
+              if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
+                  //your site secret key, 'keep it secret, keep it safe
+                  $secret = 'KeyGoesHere'; //Change me
+                  //get verify response data
+                  $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+                  $responseData = json_decode($verifyResponse);
+                  if($responseData->success):
+
               if($first_nameErr == null && $last_nameErr == null && $addressErr == null && $cityErr == null && $postcodeErr == null && $phoneErr == null && $emailErr == null && $ew_idErr == null && $ew_regErr == null && $reg_typeErr == null && $courseErr == null):
-    						
+
                 $subject = "New enrolment from: " . $first_name;
                 $htmlContent = "
                     <h1>Enrolment details</h1>
@@ -159,7 +163,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $headers .= "From: Vidtech Services <". FROM .">\r\n";
                 //send email
                 @mail(EMAIL,$subject,$htmlContent,$headers);
-                
+
 
                 $succMsg = 'Your contact request have submitted successfully.';
               else:

@@ -12,13 +12,7 @@ $errMsg = $succMsg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if(isset($_POST['submit']) && !empty($_POST['submit'])):
-      if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
-          //your site secret key, 'keep it secret, keep it safe
-          $secret = 'KeyGoesHere'; //Change me
-          //get verify response data
-          $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
-          $responseData = json_decode($verifyResponse);
-          if($responseData->success):
+
 
               //Pre sanitize all inputs
               $_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
@@ -39,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
               if(!empty($_POST['message'])){
                 $message = test_input($_POST["message"]);
-                if (!preg_match("/^[a-zA-Z0-9 .?&':,-]*$/",$message)) {
+                if (!preg_match("/^[\r\na-zA-Z0-9 .?&':,-]*$/",$message)) {
                   $messageErr = "Only letters, numbers and white space allowed";
                 }
               } else {
@@ -55,6 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               } else {
                   $emailErr = "Email is required";
               }
+
+              if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
+                  //your site secret key, 'keep it secret, keep it safe
+                  $secret = 'KeyGoesHere'; //Change me
+                  //get verify response data
+                  $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+                  $responseData = json_decode($verifyResponse);
+                  if($responseData->success):
 
               if($nameErr == null && $messageErr == null && $emailErr == null):
 

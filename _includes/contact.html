@@ -14,14 +14,14 @@
 		</select>
 
 		<!--TEXTBOX name-->
-		<label for="text_field">Name:  <span class="error"><?php echo $nameErr;?></span></label>
+		<label for="name">Name:  <span class="error"><?php echo $nameErr;?></span></label>
     <input type="text" name="name" title="Name" placeholder="Name" required="true" value="<?php echo $name;?>"/>
 		<!--TEXTBOX email-->
-		<label for="text_field">Email address:  <span class="error"><?php echo $emailErr;?></label>
+		<label for="email">Email address:  <span class="error"><?php echo $emailErr;?></label>
 		<input type="text" name="email" title="email" placeholder="Email" required="true" value="<?php echo $email;?>"/>
 		<!--TEXTBOX message-->
-		<label for="text_field">How can we help?  <span class="error"><?php echo $messageErr;?></label>
-		<textarea name="message" title="message" placeholder="How can we help?" required="true" value="<?php echo $message;?>"></textarea>
+		<label for="message">How can we help?  <span class="error"><?php echo $messageErr;?></label>
+		<textarea name="message" title="message" placeholder="How can we help?" required="true"><?php echo $message;?></textarea>
 
 		<p>
 			<div class="g-recaptcha" data-sitekey="6Lf0ExEUAAAAALrslmkYVs0WaucAGf6erteHzTRv"></div>
