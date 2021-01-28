@@ -22,5 +22,6 @@ New and Existing Installations
  
  - New Switchboards, upgrades and replacements - where the switch board is relocated, upgraded or replaced or has   a higher current rating.
  
- - Alterations and additions classed as Hi-risk work - any other type of installation that is classes as hi-risk   but does not include the mining sector. 
-    Note: Inspection of Mining installations, required an additional endoresement which we do not have.
+ - Alterations and additions classed as Hi-risk work - any other type of installation that is classes as hi-risk   but does not include the mining sector.  
+ 
+   Note: Inspection of Mining installations, required an additional endoresement which we do not have.
