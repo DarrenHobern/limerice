@@ -16,7 +16,7 @@ EWOF's for the following types of connectable installations:
 Caravans, Campervans, Motorhomes and any other mobile items. e.g. coffee trailers, food trailers or anything that can be connected to a power supply.  
 As any connectable installation is required to be re-certified every four years, the re-inspections are carried out to meet the requirements of the Electricity Act, Regulations and the relevant Safety standards.
 <BR>
- If required we can carry out any repairs necessary to enable the issuing of the Electrical Warrant of Fitness.
+ If required we can carry out any repairs necessary to enable the issuing of the electrical warrant of fitness. (EWOF)
 <BR>
 <BR>
 <div class="tiles">
