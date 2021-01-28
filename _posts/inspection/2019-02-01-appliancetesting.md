@@ -12,7 +12,8 @@ image:
 ---
 Test and Tag for Electrical Safety  
 
-The testing of tools and equipment to ensured that there is no damage to the equipment or its supply lead and that it functions as intended.  These test are required to be carried out at different frequencys depending on the location of the equipment. e.g construction tools are required to be done every 3 months
+The testing of tools and equipment to ensured that there is no damage to the equipment or its supply lead and that it functions as intended.  
+These test are required to be carried out at different frequencys depending on the location of the equipment. e.g construction tools are required to be done every 3 months
 
 Some examples are listed.
  - Electrical equipment
