@@ -14,12 +14,18 @@ image:
 Testing and Certification  
 
 Inspections  <br>Periodic Re-inspections
-    
+
   The re-inspection of transportable installations is required to be carried out every 4 years.  
-  This includes any of the following types of installations that are conneted to the supply by means of a supply lead (typically rated at 15A).    
-  Some examples are:-
- - Caravans, Campervans and Motorhomes
- - Food trailers
- - Out buildings and cabins
- - Mobile classrooms
- 
+  This includes any of the following types of installations that are conneted to the supply by means of a supply lead.    
+
+##### EWOF's for the following types of connectable installations:
+  - Caravans
+  - Campervans
+  - Motorhomes
+  - Transportable installations (eg. tempoary site offices, tiny houses, mobile classrooms)
+  - Food trailers (eg. coffee trailers, food trailers,)  
+  - Out buildings and cabins
+  - Or anything that can be connected to a power supply
+
+
+If required we can carry out any repairs necessary to enable the issuing of the electrical warrant of fitness (EWOF). 
