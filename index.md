@@ -8,7 +8,7 @@ image:
   feature: front-1600x800.jpg
 ---
 Welcome to Vidtech Services, a professional, friendly, locally owned business situated in the Waikato / Waipa area.  
-We provide electrical inspections of All High Risk work on new and existing installations and the re-inspections of Transportable Installations, for the purpose of issuing an Electrical Warrant of Fitness. (EWOF)  
+We provide electrical inspections of All High Risk work on new and existing installations and the re-inspections of Transportable Installations, for the purpose of issuing an Electrical Warrant of Fitness (EWOF).  
 
 <div class="tiles">
 
@@ -16,7 +16,7 @@ We provide electrical inspections of All High Risk work on new and existing inst
     <a href="/inspection">
       <h2 class="post-title">Inspection</h2>
       <p class="post-excerpt">Our range of inspection services will help ensure your safety and compliance across the electrical industry in the High Risk area. 
-        Please note: We are not certified to inspect anything relating to the "Mining Sector"  
+        Please note: We are not certified to inspect anything relating to the "Mining Sector".  
         
     </p>
     </a>
@@ -25,7 +25,7 @@ We provide electrical inspections of All High Risk work on new and existing inst
   <div class="tile">
     <a href="/courses">
       <h2 class="post-title">Training</h2>
-      <p class="post-excerpt">As an EWRB Certified Competency Provider, we offer a range of EWRB approved electrical safety refresher courses, that will keep you up to date within a rapidly changing sector.         
+      <p class="post-excerpt">As an EWRB Certified Competency Provider, we offer a range of EWRB approved electrical safety refresher courses, that will keep you up-to-date within a rapidly changing sector.         
     </p>
     </a>
   </div><!-- /.tile -->
