@@ -11,8 +11,7 @@ image:
 permalink: /courses/index.php
 ---
 
-Enrolments are now open.    
-To book a place on a course, please complete the enrolment form. 
+To book a place on a course, please complete the registration form. 
 <br>
 Have you completed your e-learning modules, or can provide evidence of completion?
 {: .notice-info}
