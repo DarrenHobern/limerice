@@ -14,14 +14,14 @@ New and Existing Installations
 
  - BTS - (Builders Temp Supplies) - a temporary supply used for the supply to construction tools and equipment.
  
- - New connections - Ones that are connected for the first time.
+ - New connections - installations that are connected for the first time.
  
- - Permanent connections - typically where the installation is completed and any temporary supply is removedand     made permanent.
+ - Permanent connections - typically where the installation is completed and any temporary supply is removed and made permanent.
  
- - Mains Work - any work that is related to the supply and distribution of electricity within an installation.
+ - Mains work - any work that is related to the supply and distribution of electricity within an installation.
  
- - New Switchboards, upgrades and replacements - where the switch board is relocated, upgraded or replaced or has   a higher current rating.
+ - New Switchboards, upgrades and replacements - where the switchboard is relocated, upgraded or replaced with one that has a higher current rating.
  
- - Alterations and additions classed as Hi-risk work - any other type of installation that is classes as hi-risk   but does not include the mining sector.  
+ - Alterations and additions classed as Hi-risk work - any other type of installation that is classes as Hi-risk.  
  
-   Note: Inspection of Mining installations, required an additional endoresement which we do not have.
+   Note: Inspection of Mining installations, requires an additional endoresement which we do not have.

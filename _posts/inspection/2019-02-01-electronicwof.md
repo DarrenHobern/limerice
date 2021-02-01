@@ -11,12 +11,12 @@ image:
   teaser:   ewof-400x250.jpg
 ---
 
-Inspections  <br>Periodic Re-inspections
+Testing and Certification  
 
-  Testing and certification 
-  
+Inspections  <br>Periodic Re-inspections
+    
   The re-inspection of transportable installations is required to be carried out every 4 years.  
-  This includes any of the following types of installations that are conneted to the supply by means of a supply lead. (Typically rated at 15A)  
+  This includes any of the following types of installations that are conneted to the supply by means of a supply lead (typically rated at 15A).    
   Some examples are:-
  - Caravans, Campervans and Motorhomes
  - Food trailers
