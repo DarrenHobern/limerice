@@ -8,18 +8,18 @@ tags: []
 image:
   feature:
   teaser:
-permalink: /courses/index.php
+permalink: /training/index.php
 ---
 
 To book a place on a course, please complete the enrolment form.
 <br>
-Have you completed your [e-learning modules]({{site.url}}/courses/ewrb/), or can provide evidence of completion?
+Have you completed your [e-learning modules]({{site.url}}/training/ewrb/), or can provide evidence of completion?
 {: .notice-info}
 Vidtech Services provides training options that vary from courses on set dates, times and locations to tailored options taught on your own premises.  
 As refresher training is now goverened by your licence expiry date, courses will be dependent on numbers.
 <div class="row">
     <div class="large-12">
-        {% include course-list.html category='courses' %}
+        {% include course-list.html category='training' %}
     </div>
 </div>
 
