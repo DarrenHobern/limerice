@@ -11,7 +11,7 @@ image:
 permalink: /training/index.php
 ---
 
-To book a place on a course, please complete the enrolment form.
+To book your place on a course, please complete the enrolment form.  
 <br>
 Have you completed your [e-learning modules]({{site.url}}/training/ewrb/), or can provide evidence of completion?
 {: .notice-info}
