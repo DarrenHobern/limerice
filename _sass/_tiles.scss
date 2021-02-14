@@ -2,6 +2,11 @@
    Tiles
    ========================================================================== */
 
+.tiles {
+
+
+}
+
 .tile {
   @include outer-container;
   margin-bottom: $gutter;
@@ -10,7 +15,7 @@
   @include media($micro) {
     @include fill-parent;
   }
-  @include media(new-breakpoint(min-width em(480) 12)) {
+  @include media(new-breakpoint(min-width em(600) 12)) {
     @include span-columns(3);
     @include omega(4n);
   }
@@ -44,4 +49,8 @@
       }
     }
   }
+}
+
+.tile#home {
+  @include span-columns(6);
 }

@@ -1,5 +1,8 @@
 <ul class="menu-item">
 	<li class="home"><a href="/">{{ site.title }}</a></li>
+	{% if page.permalink != '/' %}
+		<li><a href="{{ site.url }}">Home</a></li>
+	{% endif %}
 	{% for link in site.data.navigation %}
     {% if link.url contains 'http' %}
         {% assign domain = '' %}

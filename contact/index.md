@@ -2,7 +2,7 @@
 layout: contact
 title: "Contact Us"
 date: 2014-06-02T09:44:20-04:00
-modified: 2019-02-28T14:56:44-04:00
+modified: 2021-01-28T14:56:44-04:00
 excerpt: "Vidtech Services Contact Us"
 image:
   feature:
@@ -13,7 +13,9 @@ ads: false
 permalink: /contact/index.php
 ---
 ![map]({{site.url}}/images/range-map.png)
-With over 30 years experience in the electrical industry, Brian established Vidtech Services in 1996. A solely owned and operated business providing inspections and training courses for the electrical sector in the Waipa/Waikato/Matamata-Piako area.  
+Welcome to Vidtech Services Electrical Inspections, a professional, friendly, locally owned and operated business, located in the Waikato/Waipa area.
+With over 30 years experience in the electrical industry, Vidtech Services was established in 1996.
+We provide electrical inspections of all installations, including the inspection and issuing of an Electrical Warrant of Fitness (EWOF). 
 <br>
 <br>
 Any queries you may have, can be made via email, mobile phone or use the contact form below.  

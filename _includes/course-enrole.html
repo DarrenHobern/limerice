@@ -1,9 +1,8 @@
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 <fieldset>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#enrol">
-		<h2>Registration Form </h2>
+		<h2>Enrolment Form </h2>
 		<a name="enrol"></a>
 		<p>Electrical re-registration training.  <br>Please complete all fields in full.</p>
 		<label><span class="error"><?php echo $errMsg; ?></span></label>
@@ -28,14 +27,15 @@
 		<label for="text_field">Email address:  <span class="error"><?php echo $emailErr;?></span></label>
 		<input type="text" name="email" value="<?php echo $email;?>" required="true"/>
 
-		<label for="text_field">EW ID number:  <span class="error"><?php echo $ew_idErr;?></span></label>
-		<input type="text" name="ew_id" value="<?php echo $ew_id;?>" required="true"/>
+		<label for="text_field" >EW ID number:  <span class="error"><?php echo $ew_idErr;?></span></label>
+		<input type="text" name="ew_id" placeholder="E 123456" value="<?php echo $ew_id;?>" />
 
-		<label for="text_field">EW registration number:  <span class="error"><?php echo $ew_regErr;?></span></label>
-		<input type="text" name="ew_reg" value="<?php echo $ew_reg;?>" required="true"/>
-		<p>
+		<label for="text_field" >EW registration number:  <span class="error"><?php echo $ew_regErr;?></span></label>
+		<input type="text" name="ew_reg" placeholder="EW123789" value="<?php echo $ew_reg;?>" />
+
+		<p style="width: 28.5em;">
 			<label for="reg_type">Registration type:</label>
-			<select name="reg_type">
+			<select name="reg_type" style="width: 100%;">
 				<option value="OTHER">Other</option>
 				<option value="AT">Associated Tradesperson</option>
 				<option value="CJ">Cable Jointer</option>
@@ -57,6 +57,10 @@
 				<option value="LMTM">Transmission Line Mechanic</option>
 			</select>
 		</p>
+		<p style="width: 28.5em;">
+			<label for="pl_exp" >Practise license expiry date:<span class="error"><?php echo $pl_expErr;?></span></label>
+			<input type="date" name="pl_exp" value="<?php echo $pl_exp;?>" required="true" />
+		</p>
 		<p>
 			<label for="course">Course:  <span class="error"><?php echo $courseErr;?></span></label>
 			<label><input type="radio" class="radio" name="course"
@@ -73,7 +77,8 @@
 		</p>
 			<label><input type="checkbox" name="ewrb_complete"
 				<?php if(isset($ewrb_complete) && $ewrb_complete=="elearning_completed") echo "checked";?>
-			value="elearning_completed" /> I have completed EWRB E-learning modules</label>
+			value="elearning_completed" /> I have completed EWRB E-learning modules or can
+provide evidence of completion</label>
 		<p>
 			<div class="g-recaptcha" data-sitekey="6Lf0ExEUAAAAALrslmkYVs0WaucAGf6erteHzTRv"></div>
 			<label><span class="error"><?php echo $errMsg; ?></span></label>
