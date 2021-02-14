@@ -22,6 +22,6 @@ layout: default
         {% comment %} contact form {% endcomment %}
 				{% include contact.html %}
 			</div><!-- /.page-content -->
-		</div class="archive-wrap"><!-- /.archive-wrap -->
+		</div><!-- /.archive-wrap -->
 	</div><!-- /.wrap -->
 </div><!-- /#main -->
