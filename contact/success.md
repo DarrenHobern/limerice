@@ -11,7 +11,4 @@ image:
 sitemap: false
 ---
 Thanks for contacting us.  
-Refresher course enquiries will be processed and you will be notified of the next available course dates. 
-For all other enquiries, we will process your request and will get back to you shortly. 
-
-Note: If you have received a license renewal notice and your training is still current, proceed with the renewal process.
+We will process your request and will get back to you shortly. 
