@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: enrol-layout
 ---
-{% comment %} Validation for enrolment form {% endcomment %}
- {% include course-submit.php %}
+
 <div id="main" role="main">
 	<div class="wrap">
 		{% if page.image.feature %}

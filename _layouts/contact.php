@@ -1,8 +1,6 @@
 ---
-layout: default
+layout: contact-layout
 ---
-{% comment %} Validation for contact form {% endcomment %}
- {% include contact-submit.php %}
 <div id="main" role="main">
 	<div class="wrap">
 		{% if page.image.feature %}
