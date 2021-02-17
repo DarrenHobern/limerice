@@ -182,7 +182,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 if($succMsg != null):
-    header("Location: /contact/success/");
+    header("Location: /training/success/");
 endif;
 
 function test_input($data) {
