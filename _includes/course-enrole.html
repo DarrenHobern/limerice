@@ -61,8 +61,9 @@
 			<label for="pl_exp" >Practise license expiry date:<span class="error"><?php echo $pl_expErr;?></span></label>
 			<input type="date" name="pl_exp" value="<?php echo $pl_exp;?>" required="true" />
 		</p>
-		<p>
-			<label for="course">Course:  <span class="error"><?php echo $courseErr;?></span></label>
+		<div class="selectors" sytle="width: 100%;">
+		<p style="width: 50%; float: left;">
+			<label for="course">Course type:  <span class="error"><?php echo $courseErr;?></span></label>
 			<label><input type="radio" class="radio" name="course"
 				<?php
 					$course = !empty($course)?$course:'';
@@ -75,10 +76,28 @@
 				<?php if(isset($course) && $course=="Fa_only") echo "checked";?>
 				value="Fa_only" />First aid only</label>
 		</p>
+
+		<p style="width: 50%; float: right;">
+			<label for="date">Course date:  <span class="error"><?php echo $course_dateErr;?></span></label>
+			<label class="classDates"><input type="radio" class="radio" name="course_date"
+				<?php
+					$course_date = !empty($course_date)?$course_date:'';
+					if(isset($course_date) && $course_date=="Next") echo "checked";?>
+				value="Next" />Next: <span class="cdNext"></span></label>
+			<label class="classDates"><input type="radio" class="radio" name="course_date"
+				<?php if(isset($course_date) && $course_date=="Upcoming") echo "checked";?>
+				value="Upcoming" />Upcoming: <span class="cdUpcoming"></span></label>
+			<label><input type="radio" class="radio" name="course_date"
+				<?php if(isset($course_date) && $course_date=="Other") echo "checked";?>
+				value="Other" />Other</label>
+		</p>
+	</div>
+		<p>
 			<label><input type="checkbox" name="ewrb_complete"
 				<?php if(isset($ewrb_complete) && $ewrb_complete=="elearning_completed") echo "checked";?>
 			value="elearning_completed" /> I have completed EWRB E-learning modules or can
 provide evidence of completion</label>
+		</p>
 		<p>
 			<div class="g-recaptcha" data-sitekey="6Lf0ExEUAAAAALrslmkYVs0WaucAGf6erteHzTRv"></div>
 			<label><span class="error"><?php echo $errMsg; ?></span></label>

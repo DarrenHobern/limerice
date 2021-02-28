@@ -2,12 +2,28 @@
 
     <div class="tiles">
 {% for post in site.categories.[category] %}
-<div class="tile">
-        <a href="{{ site.url }}{{ post.url }}">
-          {% if post.image.teaser %}<img src="{{ site.url }}/images/{{ post.image.teaser }}" alt="teaser" itemprop="image">
-            {% else %}<img src="{{ site.url }}/images/{{ site.teaser }}" alt="teaser" itemprop="image">{% endif %}
-        </a>
-        <a href="{{ site.url }}{{ post.url }}"><h2 class="font-size-h3 t10 post-title">{{ post.title }}</h2></a>
-</div>
+  {% if post.title == "EWRB Next:" %}
+    <div class="tile classDates">
+            <a href="{{ site.url }}{{ post.url }}">
+              {% if post.image.teaser %}<img src="{{ site.url }}/images/{{ post.image.teaser }}" alt="teaser" itemprop="image">
+                {% else %}<img src="{{ site.url }}/images/{{ site.teaser }}" alt="teaser" itemprop="image">{% endif %}
+            </a>
+            <a href="{{ site.url }}{{ post.url }}"><h2 class="font-size-h3 t10 post-title">{{ post.title }} <span class="cdNext"></span></h2></a>
+  {% elsif post.title == "EWRB Upcoming:" %}
+  <div class="tile classDates">
+          <a href="{{ site.url }}{{ post.url }}">
+            {% if post.image.teaser %}<img src="{{ site.url }}/images/{{ post.image.teaser }}" alt="teaser" itemprop="image">
+              {% else %}<img src="{{ site.url }}/images/{{ site.teaser }}" alt="teaser" itemprop="image">{% endif %}
+          </a>
+              <a href="{{ site.url }}{{ post.url }}"><h2 class="font-size-h3 t10 post-title">{{ post.title }} <span class="cdUpcoming"></span></h2></a>
+  {% else %}
+  <div class="tile">
+          <a href="{{ site.url }}{{ post.url }}">
+            {% if post.image.teaser %}<img src="{{ site.url }}/images/{{ post.image.teaser }}" alt="teaser" itemprop="image">
+              {% else %}<img src="{{ site.url }}/images/{{ site.teaser }}" alt="teaser" itemprop="image">{% endif %}
+          </a>
+              <a href="{{ site.url }}{{ post.url }}"><h2 class="font-size-h3 t10 post-title">{{ post.title }}</h2></a>
+            {% endif %}
+    </div>
 {% endfor %}
 </div>

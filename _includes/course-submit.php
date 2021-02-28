@@ -6,8 +6,8 @@ define("FROM", "webadmin@localhost");
 
 $auto_reply = FALSE;
 
-$first_nameErr = $last_nameErr = $addressErr = $cityErr = $postcodeErr = $phoneErr = $emailErr = $ew_idErr = $ew_regErr = $reg_typeErr = $pl_expErr = $courseErr = $ewrb_completeErr = "";
-$first_name = $last_name = $address = $city = $postcode = $phone = $email = $ew_id = $ew_reg = $reg_type = $pl_exp = $course = $ewrb_complete = "";
+$first_nameErr = $last_nameErr = $addressErr = $cityErr = $postcodeErr = $phoneErr = $emailErr = $ew_idErr = $ew_regErr = $reg_typeErr = $pl_expErr = $courseErr = $course_dateErr = $ewrb_completeErr = "";
+$first_name = $last_name = $address = $city = $postcode = $phone = $email = $ew_id = $ew_reg = $reg_type = $pl_exp = $course = $course_date = $ewrb_complete = "";
 $errMsg = $succMsg = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $_POST['ew_reg'] = filter_var($_POST['ew_reg'], FILTER_SANITIZE_STRING);
               $_POST['reg_type'] = filter_var($_POST['reg_type'], FILTER_SANITIZE_STRING);
               $_POST['course'] = !empty($_POST['course'])?filter_var($_POST['course'], FILTER_SANITIZE_STRING):'';
+              $_POST['course_date'] = !empty($_POST['course_date'])?filter_var($_POST['course_date'], FILTER_SANITIZE_STRING):'';
               $_POST['ewrb_complete'] = !empty($_POST['ewrb_complete'])?filter_var($_POST['ewrb_complete'], FILTER_SANITIZE_STRING):'';
               $_POST['pl_exp'] = filter_var($_POST['pl_exp'], FILTER_SANITIZE_SPECIAL_CHARS);
 
@@ -127,6 +128,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $courseErr = "Please select a course type";
               }
 
+              $course_date = !empty($_POST['course_date'])?$_POST['course_date']:'';
+              if(!empty($_POST['course_date'])){
+                $course_date = test_input($_POST['course_date']);
+              } else {
+                $course_date = '';
+                $course_dateErr = "Please select a course date";
+              }
+
               $ewrb_complete = !empty($_POST['ewrb_complete'])?$_POST['ewrb_complete']:'';
 
               if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
@@ -153,6 +162,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p><b>ew_reg: </b>".$ew_reg."</p>
                     <p><b>reg_type: </b>".$reg_type."</p>
                     <p><b>course: </b>".$course."</p>
+                    <p><b>course date: </b>".$course_date."</p>
                     <p><b>e-learning status: </b>".$ewrb_complete."</p>
                 ";
 

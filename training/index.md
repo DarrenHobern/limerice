@@ -25,7 +25,6 @@ As refresher training is now goverened by your license expiry date, courses will
 
 
 
-
 {% comment %}
 Section to request other sessions
 {% endcomment %}

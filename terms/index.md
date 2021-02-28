@@ -79,3 +79,4 @@ It features images by:
  - [Darren Hobern](https://github.com/darrenhobern)  
  - Jeanette Hobern
  - [Bright Light Electrical](http://brightlightelectrical.co.nz/) c/o [Solar Electric Technology](https://www.esolar.co.nz/)  
+ - [New Zealand Electrical Workers Registration Board](https://www.ewrb.govt.nz/about-us/copyright/) © Crown
