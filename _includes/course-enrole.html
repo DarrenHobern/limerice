@@ -83,10 +83,7 @@
 				<?php
 					$course_date = !empty($course_date)?$course_date:'';
 					if(isset($course_date) && $course_date=="Next") echo "checked";?>
-				value="Next" />Next: <span class="cdNext"></span></label>
-			<label class="classDates"><input type="radio" class="radio" name="course_date"
-				<?php if(isset($course_date) && $course_date=="Upcoming") echo "checked";?>
-				value="Upcoming" />Upcoming: <span class="cdUpcoming"></span></label>
+				value="Next" />Next: Join group course </label>
 			<label><input type="radio" class="radio" name="course_date"
 				<?php if(isset($course_date) && $course_date=="Other") echo "checked";?>
 				value="Other" />Other</label>

@@ -15,7 +15,7 @@ To book your place on a course, please complete the enrolment form.
 <br>
 Have you completed your [e-learning modules]({{site.url}}/training/ewrb/), or can provide evidence of completion?
 {: .notice-info}
-Vidtech Services provides training options that vary from courses on set dates, times and locations to tailored options taught on your own premises.  
+Vidtech Services provides training options that vary; from courses on set dates, to tailored options taught on your own premises.  
 As refresher training is now goverened by your license expiry date, courses will be dependent on numbers.
 <div class="row">
     <div class="large-12">
