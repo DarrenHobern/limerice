@@ -1,6 +1,6 @@
 ---
 layout: service
-title: "Electrical Warrant of Fitness (EWOF)"
+title: "Warrant of Electrical Fitness (WoEF)"
 categories: inspection
 modified: 2021-01-28T16:28:11-13:00
 comments: false
@@ -15,10 +15,10 @@ Testing and Certification
 
 Inspections  <br>Periodic Re-inspections
 
-  The re-inspection of transportable installations is required to be carried out every 4 years.  This is to ensure that it continues to be compliant with the relevant standard and when tested will continue to be safe to use.  Part of the testing, particularly in  socket outlets, is to ensure that all connections remain secure and have not loosened with the vibration that is caused by the movement  of travelling on roads and the like.  
+  The re-inspection of transportable installations is required to be carried out every 4 years.  This is to ensure that it continues to be compliant with the relevant standard and when tested will continue to be safe to use.  Part of the testing, particularly in  socket outlets, is to ensure that all connections remain secure and have not loosened with the vibration that is caused by the movement of travelling on roads and the like. Upon successful inspection a Warrant of Electrical fitness, sometimes refered to as an EWoF (Electrical Warrant of Fitness), is issued.  
 
 
-##### EWOF's for the following types of connectable installations:  
+##### WoEF's for the following types of connectable installations:  
 
   - Caravans  
   - Campervans
@@ -27,4 +27,4 @@ Inspections  <br>Periodic Re-inspections
   - Food trailers (eg. coffee trailers, food trailers)  
   - Out buildings and cabins
 
-##### If required we can carry out any repairs necessary to enable the issuing of the electrical warrant of fitness (EWOF).
+##### If required we can carry out any repairs necessary to enable the issuing of the warrant of electrical fitness (WoEF).
